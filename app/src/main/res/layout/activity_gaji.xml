@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#33cc5a"
+    tools:context=".Gaji">
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:src="@drawable/gaji"
+        android:id="@+id/imggaji"
+        android:layout_marginTop="15dp"
+        android:paddingTop="8dp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Form Gaji"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imggaji"
+        android:textSize="35dp"
+        android:paddingTop="8dp"
+        android:textColor="#fff"
+        android:id="@+id/txtgaji"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID Pegawai"
+        android:paddingRight="10dp"
+        android:id="@+id/txtpegawai"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+       android:layout_below="@id/txtgaji"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtpegawai"
+        android:id="@+id/edtpegawai"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Pegawai"
+        android:paddingRight="10dp"
+        android:id="@+id/nama"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_below="@id/edtpegawai"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nama"
+        android:id="@+id/edtnama"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status Kepegawaian"
+    android:paddingRight="10dp"
+    android:id="@+id/status"
+    android:textSize="20sp"
+    android:textColor="#000"
+    android:textStyle="bold"
+    android:layout_below="@id/edtnama"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/status"
+        android:id="@+id/spinstatus"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gaji Pokok"
+        android:paddingRight="10dp"
+        android:id="@+id/gajipokok"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_below="@id/spinstatus"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gajipokok"
+        android:id="@+id/edtgaji"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kategori Tunjangan Keluarga"
+        android:paddingRight="10dp"
+        android:id="@+id/tanggungan"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_below="@id/edtgaji"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tanggungan"
+        android:id="@+id/spin1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tunjangan Keluarga"
+        android:paddingRight="10dp"
+        android:id="@+id/t_kel"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_below="@id/spin1"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edttkel"
+        android:layout_below="@id/t_kel"  />
+
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edttkel"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@drawable/stylebutton"
+        android:id="@+id/btnproses"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Gaji"
+        android:id="@+id/txtoutput"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_below="@id/btnproses"
+        android:layout_marginTop="20dp"/>
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
+</ScrollView>
